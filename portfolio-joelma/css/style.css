@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
@@ -7,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root{
     --cor-background: #01155c ;
     --cor-primaria: #22D4FD;
@@ -14,6 +14,11 @@
     --cor-hover: #1e3f6f;
     --font-titulo-principal: 'Krona One', sans-serif;
     --font-textos: 'Raleway', sans-serif;  
+}
+
+body{    
+    box-sizing: border-box;    
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -38,18 +43,23 @@
     padding: 5% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
-    
+    justify-content: space-between;  
+     background-color: var(--cor-background); 
 }
+
 .apresentacao__conteudo {
-    width: 615px;
+    width: 615px;    
     display: flex;
     flex-direction: column;
     gap: 40px;       
 }
 
-.apresentacao__conteudo__texto a{
-    text-decoration: none;
+.apresentacao__conteudo__titulo {
+    font-size: 33px;
+    font-family: var(--font-titulo-principal);    
+}
+
+.titulo-destaque {
     color: var(--cor-primaria);
 }
 
@@ -59,15 +69,51 @@
     padding-right: 50px;      
 }
 
-.apresentacao__conteudo__titulo {
-    font-size: 33px;
-    font-family: var(--font-titulo-principal);    
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-primaria);
 }
 
 .minhaFoto {       
     width: 490px;
     height: 550px;    
     border-radius: 10px;  
+}
+
+.apresentacao__links__contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-textos);
+    font-size: 24px;
+}
+
+.apresentacao__links__botoes {    
+    display: flex;
+    justify-content: center;
+    gap: 16px;   
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--cor-primaria);;
+    font-size: 24px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-textos);
+    font-weight: 500;
+    transition: .5s ease;
+    transition-property: background-color, color;     
+}
+
+.apresentacao__links__botoes:hover {
+    background-color: var(--cor-hover);
+    font-weight: 800;
 }
 
 .rodape {
@@ -82,24 +128,19 @@
 
 html{
     font-size: 10px;
-    font-family: 'Poppins', 'Times New Roman', Times, serif ;
+    font-family: var(--font-titulo-principal);
     scroll-behavior: smooth;
 }
 
+/* botao do portfolio */
 a{
     text-decoration: none;
 }
-img{
+
+.fotoApresentacao{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 200;
-    letter-spacing: 0.05rem;
 }
 
 .container{
@@ -112,14 +153,13 @@ p {
 .section-title {
     font-size: 4rem;
     font-weight: 500;
-    color: black;
+    color: var(--cor-background);
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
 }
-
 
 
 /* Seção de apresentação */
@@ -150,10 +190,14 @@ p {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 2.8s;
 }
-#presentation .cta{
-    display: inline-block;
+
+#presentation .cta{   
     padding: 10px 30px;
-    color: var(--cor-primaria);
+    border-radius: 8px;  
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--font-textos);
+    font-weight: 500;
     background-color: transparent;
     border: 2px solid var(--cor-primaria);
     font-size: 2rem;
@@ -161,14 +205,24 @@ p {
     letter-spacing: .1rem;
     margin-top: 20px;
     transition: .5s ease;
-    transition-property: background-color, color;
+    transition-property: background-color, color; 
+    width: 378px;
+}
 
-}
 #presentation .cta:hover{
-    color: white;
-    font-weight: 500;
-    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 800;
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-primaria);
 }
+
+#botoes__apresentacao {
+    padding-top: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #presentation h1 span{
     position: absolute;
     top: 0;
@@ -179,15 +233,19 @@ p {
     animation-delay: .5s;
     background-color: var(--cor-background);
 }
+
 #presentation h1:nth-child(1) span{
     animation-delay: .5s;
 }
+
 #presentation h1:nth-child(2) span{
     animation-delay: 1.5s;
 }
+
 #presentation h1:nth-child(3) span{
     animation-delay: 2.5s;
 }
+
 #presentation::after{
     content: '';
     position: absolute;
@@ -199,6 +257,7 @@ p {
     opacity: 0.5;
     z-index: -1;
 }
+
 
 /* Seção de Portifólio */
 
@@ -229,26 +288,37 @@ p {
 }
 
 #portfolio .project-info {
-    padding: 30px;
+    padding: 5%;    
     flex-basis: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+    background-image: linear-gradient(60deg, var(--cor-primaria) 0%, var(--cor-background) 100%);
     color: white;
 }
 
 #portfolio .project-info h1{
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 500;    
 }
 
 #portfolio .project-info h2{
+    color: var(--cor-background);
     font-size: 1.8rem;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.texto-portfolio {
+    color: var(--cor-secundaria);
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
 }
 
 #portfolio .project-img {

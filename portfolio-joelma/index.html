@@ -15,7 +15,7 @@
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
         </nav>
-    </header>
+    </header>    
 
     <section id="presentation">
         <div class="presentation container">
@@ -23,22 +23,52 @@
                 <h1>Olá,<span></span></h1>
                 <h1>meu nome é<span></span></h1>
                 <h1>Joelma Camargo<span></span></h1>
-                <a href="#portfolio" type="button" class="cta">Portifólio</a>
+                <div id="botoes__apresentacao">
+                    <a href="#portfolio" type="button" class="cta">Portfólio</a>
+                    <a href="#apresentacao" type="button" class="cta">Contato</a>
+                </div>
             </div>
         </div>
     </section>
+    
+    <main id="apresentacao" class="apresentacao">    
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível, com uma desenvolvedora
+                <strong class="titulo-destaque">Front-end de qualidade!</strong>
+            </h1>
+            <p class="apresentacao__conteudo__texto">
+                Olá! Sou Joelma Camargo, atualmente estou cursando 
+                Desenvolvimento WEB - UNOPAR. Sou desenvolvedora Front-end 
+                com especialidade em Angular, HTML, CSS e JavaScript.                                        
+            </p>          
+
+            <div class="apresentacao__links__contato">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+
+                <a class="apresentacao__links__botoes" href="https://github.com/JoelmaCamargo" target="_blank">
+                    <img src="img/github.png">
+                    Github
+                </a>
+                <a class="apresentacao__links__botoes" href="https://www.linkedin.com/in/joelmavilela/" target="_blank">
+                    <img src="img/linkedin.png">
+                    Linkedin
+                </a>
+            </div>            
+        </section>
+        <img class="minhaFoto" src="img/jo.jpeg" alt="Foto da desenvolvedora Joelma Camargo programando">
+    </main>
 
     <section id="portfolio">
         <div class="portfolio container">
-            <div class="portfolio header">
-                <h1 class="section-title"><span>Portifólio</span></h1>
+            <div class="portfolio-header">
+                <h1 class="section-title"><span>Portfólio</span></h1>
             </div>
             <div class="all-projects">
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Projeto 1</h1>
                         <h2>Conflitos com o git</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <p class="texto-portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
@@ -51,20 +81,20 @@
                     <div class="project-info">
                         <h1>Projeto 2</h1>
                         <h2>Enviando o código para o github utilizando workflow centralizado</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <p class="texto-portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
                     </div>
                     <div class="project-img">
-                        <img src="/portfolio-joelma/img/img-1.png" alt="img">
+                        <img class="fotoApresentacao" src="/portfolio-joelma/img/img-1.png" alt="img">
                     </div>
                 </div>
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Projeto 3</h1>
                         <h2>Codar é amor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <p class="texto-portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
@@ -77,7 +107,7 @@
                     <div class="project-info">
                         <h1>Projeto 4</h1>
                         <h2>Codar é gostoso demais</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
+                        <p class="texto-portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec eros leo. Vestibulum
                             aliquam vel libero eget porttitor. Nunc nisl nunc, suscipit quis quam ut, congue fermentum
                             ipsum. In consectetur, leo a accumsan eleifend, tortor leo eleifend nunc, sed pulvinar neque
                             urna vitae dui.</p>
@@ -89,6 +119,7 @@
             </div>
         </div>
     </section>
+    
     <footer class="rodape">
         <p>Desenvolvido por Joelma Camargo</p>
     </footer> 
