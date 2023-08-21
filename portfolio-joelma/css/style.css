@@ -106,6 +106,40 @@ a{
     border: 2px solid var(--cor-primaria);
 }
 
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--font-titulo-principal);    
+}
+
+.apresentacao__conteudo__curriculo {
+    font-size: 2.5rem;
+    font-family: var(--font-titulo-principal);  
+    color: var(--cor-primaria);  
+}
+
+.apresentacao__conteudo__curriculo__li {
+    font-weight: 800;
+    color: var(--cor-secundaria);
+    padding: 5% 0;
+    margin: 10px;    
+}
+
+.apresentacao__links__certificados {
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 5% 0;       
+}
+
+.apresentacao__conteudo__certificado {
+    font-weight: 800;
+}
+
+.apresentacao__links__certificados p {
+    padding: 2% 0 5% 0;
+    font-weight: 600;
+    color: #999d9d;    
+}
+
 #botoes__apresentacao {
     padding-top: 10%;
     align-items: center;
