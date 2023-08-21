@@ -1,4 +1,4 @@
-# Portfolio para expor meus projetos - [Em construção]
+# Portfólio para expor meus projetos - [Em construção]
 
 :spiral_calendar: Atualizado em 20 de agosto de 2023.
 
